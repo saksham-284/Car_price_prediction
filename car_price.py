@@ -12,7 +12,7 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split,GridSearchCV,cross_val_score,RandomizedSearchCV
 from sklearn.metrics import root_mean_squared_error
 import matplotlib.pyplot as plt
-df=pd.read_csv("C:/Users/SAKSHAM/Downloads/if_main_practice/python_hello/car1.csv")
+df=pd.read_csv("car.csv")
 print(df.shape) 
 print(df.dtypes)
 print(df.isnull().sum())
