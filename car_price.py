@@ -7,7 +7,6 @@ from sklearn.dummy import DummyRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split,GridSearchCV,cross_val_score,RandomizedSearchCV
 from sklearn.metrics import root_mean_squared_error
@@ -47,6 +46,6 @@ dumm_pred=dummy.predict(X_test)
 print("train",root_mean_squared_error(y_train,y_train_pred))
 print("test",root_mean_squared_error(y_test,y_pred))
 print("dummy",root_mean_squared_error(y_test,dumm_pred))
-print(model.best_params_)
-print(model.best_score_)
-print(model.cv_results_["std_test_score"][model.best_index_])
+print(random.best_params_)
+print(random.best_score_)
+print(random.cv_results_["std_test_score"][random.best_index_])
